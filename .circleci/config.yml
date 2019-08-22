@@ -6,6 +6,10 @@ jobs:
 
     steps:
       - checkout
+      
       - run:
           command: mvn package
           working_directory: web-app
+          
+      - store_artifacts:
+          path: web-app/target/web-app.war
