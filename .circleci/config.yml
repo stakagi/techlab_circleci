@@ -13,3 +13,4 @@ jobs:
           
       - store_artifacts:
           path: web-app/target/web-app.war
+          
